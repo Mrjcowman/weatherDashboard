@@ -7,6 +7,11 @@ header.top-bar {
     background-color: #333;
 }
 
+.search-section {
+    background: linear-gradient(#000000ff, #00000000);
+    height: 100%;
+}
+
 #history-dropdown {
     width: 100%;
     padding: 0;
@@ -63,15 +68,5 @@ header.top-bar {
   @media screen and (min-width: 39.9375em){
     body {
         min-height: 100vh;
-    }
-
-    main {
-        height: 100%;
-    }
-    
-    .search-section {
-        background: linear-gradient(#000000ff, #00000000);
-    
-        height: 100%;
     }
   }
