@@ -6,10 +6,81 @@
     <title>Weather Dashboard</title>
     <!-- Foundation CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="top-bar grid-x">
+        <h1 class="cell text-center">Weather Dashboard</h1>
+    </header>
 
+    <main class="grid-x">
+        <div class="search-section cell small-12 medium-4 large-3">
+            <div class="grid-y">
+                <!-- Searchbar -->
+                <form class="cell">
+                    <label for=""></label>
+                    <div class="input-group">
+                        <input type="search" class="input-group-field">
+                        <div class="input-group-button">
+                            <button class="button primary"> <i class="fas fa-search-location"></i> </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- History - Dropdown -->
+                <div class="cell show-for-small-only">
+                    <button class="button expanded" data-toggle="history-dropdown">Previous Searches</button>
+                    <div class="dropdown-pane button-group no-gaps" id="history-dropdown" data-dropdown data-auto-focus="true">
+                        <ul class="list-group">
+                            <li class="list-group-item active" data-city="Seattle">Seattle <span class="show-for-sr">(Active)</span></li>
+                            <li class="list-group-item" data-city="Tacoma">Tacoma</li>
+                            <li class="list-group-item" data-city="Everett">Everett</li>
+                            <li class="list-group-item" data-city="Olympia">Olympia</li>
+                        </ul>                          
+                    </div>
+                </div>
+
+                <!-- History - Sidebar -->
+                <div class="cell hide-for-small-only">
+                    <ul class="list-group">
+                        <li class="list-group-item active">Seattle <span class="show-for-sr">(Active)</span></li>
+                        <li class="list-group-item">Tacoma</li>
+                        <li class="list-group-item">Everett</li>
+                        <li class="list-group-item">Olympia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <main class="cell small-12 medium-8 large-9">
+            <div class="secondary grid-y grid-padding-x grid-padding-y">
+                <!-- Current Weather -->
+                <div class="currentWeather cell small-12">
+                    <h2>Seattle (9/18/2020) <i class="fas fa-cloud-sun"></i></h2>
+                    <p>Temperature: 90.9&deg;F</p>
+                    <p>Humidity: 41%</p>
+                    <p>Wind Speed: 4.7 MPH</p>
+                    <p>UV Index: <span class="label success">9.49</span></p>
+                </div>
+                
+                <!-- 5 Day Forecast -->
+                <div class="forecast cell small-12">
+                    <h3>5-Day Forecast</h3>
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell small-12 medium-auto">a</div>
+                        <div class="cell small-12 medium-auto">b</div>
+                        <div class="cell small-12 medium-auto">c</div>
+                        <div class="cell small-12 medium-auto">d</div>
+                        <div class="cell small-12 medium-auto">e</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </main>
+    </main>
     
+
     
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

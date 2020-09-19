@@ -1,0 +1,77 @@
+body {
+    background-color: #222;
+    color: white;
+}
+
+header.top-bar {
+    background-color: #333;
+}
+
+#history-dropdown {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: unset;
+}
+
+/* List Group CSS */
+
+.list-group {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    border: unset;
+    border-radius: 0;
+    background: #334455;
+    box-shadow: none;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .list-group > :last-child {
+    margin-bottom: 0;
+  }
+  
+  .list-group-item {
+    padding: 1rem;
+  }
+  
+  .list-group-item > :last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .list-group-item.active {
+    color: black;
+    background-color: #aabbcc;
+  }
+  
+  .list-group-item:hover, .list-group-item:focus {
+    background-color: #556677;
+  }
+  
+  .list-group-item:hover.active, .list-group-item:focus.active {
+    background-color: #8899aa;
+  }
+  
+  .list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus, .list-group-item[disabled], .list-group-item[disabled]:hover, .list-group-item[disabled]:focus {
+    color: #8a8a8a;
+    cursor: not-allowed;
+    background-color: #fefefe;
+  }
+  
+  @media screen and (min-width: 39.9375em){
+    body {
+        min-height: 100vh;
+    }
+
+    main {
+        height: 100%;
+    }
+    
+    .search-section {
+        background: linear-gradient(#000000ff, #00000000);
+    
+        height: 100%;
+    }
+  }
