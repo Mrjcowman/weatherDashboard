@@ -19,9 +19,30 @@ const updateMainHeight = ()=>{
 updateMainHeight();
 smallScreenMedia.addEventListener("change", updateMainHeight);
 
-// TODO: Process Search Query
+// Process Search Query
+const onSearch = (event)=>{
+    event.preventDefault();
+
+    let input = $(event.target).parent().parent().find("input");
+
+    let searchQuery = input.val();
+    searchQuery = searchQuery.trim();
+
+    if(searchQuery){
+        getWeatherFor(searchQuery);
+    } else {
+        console.log("No input in search query");
+    }
+    input.val("");
+}
+
+$("form button").on("click", onSearch);
 
 // TODO: Get information from API
+const getWeatherFor = (city)=>{
+    let queryURL = `api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+}
 
 // TODO: Populate fields on current weather conditions
 
