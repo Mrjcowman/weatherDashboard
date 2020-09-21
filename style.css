@@ -20,6 +20,24 @@ header.top-bar {
     border: unset;
 }
 
+.big-icon {
+    font-size: 300%;
+    color: transparent;
+    stroke: black;
+    stroke-width: 12pt;
+}
+
+.card {
+    background: linear-gradient(#dddddd 75%, #999999);
+    border: unset;
+    border-radius: 20px;
+}
+
+.card-divider {
+    background: linear-gradient(#556677, #8899aa);
+    color: white;
+}
+
 /* List Group CSS */
 
 .list-group {
