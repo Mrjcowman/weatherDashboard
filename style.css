@@ -12,6 +12,14 @@ header.top-bar {
     height: 100%;
 }
 
+#citySearch {
+    flex-basis: 70%;
+}
+
+#stateSearch {
+    flex-basis: 30%;
+}
+
 #history-dropdown {
     width: 100%;
     padding: 0;

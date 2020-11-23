@@ -20,7 +20,8 @@
                 <!-- Searchbar -->
                 <form class="cell">
                     <div class="input-group">
-                        <input type="search" class="input-group-field" placeholder="City...">
+                        <input id="citySearch" type="search" class="input-group-field" placeholder="City">
+                        <input id="stateSearch" type="search" class="input-group-field" placeholder="State" maxlength="2">
                         <div class="input-group-button">
                             <button class="button primary"> <i class="fas fa-search-location"></i> </button>
                         </div>
@@ -31,22 +32,16 @@
                 <div class="cell show-for-small-only">
                     <button class="button expanded" data-toggle="history-dropdown">Previous Searches</button>
                     <div class="dropdown-pane button-group no-gaps" id="history-dropdown" data-dropdown data-auto-focus="true">
-                        <ul class="list-group">
-                            <li class="list-group-item active" data-city="Seattle">Seattle <span class="show-for-sr">(Active)</span></li>
-                            <li class="list-group-item" data-city="Tacoma">Tacoma</li>
-                            <li class="list-group-item" data-city="Everett">Everett</li>
-                            <li class="list-group-item" data-city="Olympia">Olympia</li>
+                        <ul class="history-list list-group">
+                            
                         </ul>                          
                     </div>
                 </div>
 
                 <!-- History - Sidebar -->
                 <div class="cell hide-for-small-only">
-                    <ul class="list-group">
-                        <li class="list-group-item active">Seattle <span class="show-for-sr">(Active)</span></li>
-                        <li class="list-group-item">Tacoma</li>
-                        <li class="list-group-item">Everett</li>
-                        <li class="list-group-item">Olympia</li>
+                    <ul class="history-list list-group">
+                        
                     </ul>
                 </div>
             </div>
@@ -55,57 +50,17 @@
             <div class="secondary grid-y grid-padding-x grid-padding-y">
                 <!-- Current Weather -->
                 <div class="currentWeather cell small-12">
-                    <h2>Seattle (9/18/2020) <i class="fas fa-cloud-sun"></i></h2>
-                    <p>Temperature: 90.9&deg;F</p>
-                    <p>Humidity: 41%</p>
-                    <p>Wind Speed: 4.7 MPH</p>
-                    <p>UV Index: <span class="label success">9.49</span></p>
+                    <h2>Search for your city above!</h2>
+                    <p>Temperature:</p>
+                    <p>Humidity:</p>
+                    <p>Wind Speed:</p>
+                    <p>UV Index:</p>
                 </div>
                 
                 <!-- 5 Day Forecast -->
                 <div class="forecast cell small-12">
                     <h3>5-Day Forecast</h3>
-                    <div class="grid-x grid-margin-x">
-                        <div class="cell card small-12 medium-auto">
-                            <h4 class="card-divider">Monday</h4>
-                            <div class="card-section">
-                                <i class="fas fa-cloud-sun big-icon"></i>
-                                <p>Temp: 75&deg;F</p> 
-                                <p>Humidity: 27%</p>
-                            </div>
-                        </div>
-                        <div class="cell card small-12 medium-auto">
-                            <h4 class="card-divider">Tuesday</h4>
-                            <div class="card-section">
-                                <i class="fas fa-cloud-sun big-icon"></i>
-                                <p>Temp: 75&deg;F</p> 
-                                <p>Humidity: 27%</p>
-                            </div>
-                        </div>
-                        <div class="cell card small-12 medium-auto">
-                            <h4 class="card-divider">Wednesday</h4>
-                            <div class="card-section">
-                                <i class="fas fa-cloud-sun big-icon"></i>
-                                <p>Temp: 75&deg;F</p> 
-                                <p>Humidity: 27%</p>
-                            </div>
-                        </div>
-                        <div class="cell card small-12 medium-auto">
-                            <h4 class="card-divider">Thursday</h4>
-                            <div class="card-section">
-                                <i class="fas fa-cloud-sun big-icon"></i>
-                                <p>Temp: 75&deg;F</p> 
-                                <p>Humidity: 27%</p>
-                            </div>
-                        </div>
-                        <div class="cell card small-12 medium-auto">
-                            <h4 class="card-divider">Friday</h4>
-                            <div class="card-section">
-                                <i class="fas fa-cloud-sun big-icon"></i>
-                                <p>Temp: 75&deg;F</p> 
-                                <p>Humidity: 27%</p>
-                            </div>
-                        </div>
+                    <div class="forecast-deck grid-x grid-margin-x">
                     </div>
                 </div>
                 
